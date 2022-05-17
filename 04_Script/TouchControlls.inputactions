@@ -1,0 +1,186 @@
+{
+    "name": "TouchControlls",
+    "maps": [
+        {
+            "name": "UI_System",
+            "id": "a034a35b-a831-4f94-847c-1d2a3cb6d819",
+            "actions": [
+                {
+                    "name": "PressButton",
+                    "type": "Button",
+                    "id": "242139ee-6b31-4c2b-b938-ae68e74bafb2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "cbc2baf3-2401-40f0-8a03-bb5f26259091",
+                    "path": "<Touchscreen>/press",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Android",
+                    "action": "PressButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Player",
+            "id": "1a778eab-b90a-4134-8e68-4888e02e7b26",
+            "actions": [
+                {
+                    "name": "MoveLeft",
+                    "type": "Button",
+                    "id": "be33cded-60da-4abf-866a-b83da38b4e44",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "MoveRight",
+                    "type": "Button",
+                    "id": "b46d5d14-da56-4ef9-97e8-811a91561d1b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Atk",
+                    "type": "Button",
+                    "id": "b49baec0-0674-46d9-b7f9-82c080b24620",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press"
+                },
+                {
+                    "name": "Block",
+                    "type": "Button",
+                    "id": "78851c43-c0f3-464a-bcbb-4b2d74e11f01",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press(behavior=2),Hold"
+                },
+                {
+                    "name": "Act",
+                    "type": "Button",
+                    "id": "2c98929e-aa62-4f06-873b-051d4242e36a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press(behavior=2)"
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "abd9b80e-ff0c-45c4-861a-672c7d9e26bd",
+                    "path": "<Touchscreen>/touch1/indirectTouch",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "Android",
+                    "action": "MoveLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6e3a2a94-c95f-405f-b499-e335600e07d3",
+                    "path": "<Touchscreen>/touch2/indirectTouch",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "Android",
+                    "action": "MoveRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "245d203e-b047-4c8f-a2f9-307ce9f7f685",
+                    "path": "<Touchscreen>/touch3/indirectTouch",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Android",
+                    "action": "Atk",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b6290fad-c78e-4347-8fe1-c120aec311bb",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Android",
+                    "action": "Atk",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cb75d0c1-3496-40d4-8f1b-09799ca24595",
+                    "path": "<Touchscreen>/touch4/indirectTouch",
+                    "interactions": "Press(behavior=2),Hold",
+                    "processors": "",
+                    "groups": "Android",
+                    "action": "Block",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "728338d8-fb21-4bff-a9da-fca165638682",
+                    "path": "<Keyboard>/g",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Android",
+                    "action": "Block",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3a920b3b-57da-4602-8dee-957bb2d1bd15",
+                    "path": "<Touchscreen>/touch5/indirectTouch",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Android",
+                    "action": "Act",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a0200cb5-80bf-4823-bc4a-1f6eef34f577",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Android",
+                    "action": "Act",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Android",
+            "bindingGroup": "Android",
+            "devices": [
+                {
+                    "devicePath": "<Touchscreen>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": true,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
